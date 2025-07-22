@@ -11,7 +11,7 @@ Tested only on Ubuntu environment.
 ```
 apt install devilspie2
 ```
-locate devilspie2 directory to ~/.config
+Locate devilspie2 directory to ~/.config .
 ```
 devilspie2 &
 ```
