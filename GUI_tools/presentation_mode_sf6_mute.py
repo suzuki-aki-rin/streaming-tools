@@ -6,11 +6,13 @@ import subprocess
 import shlex
 
 
+APPNAME_SF6 = "Street Fighter 6"
+
 cmd_get_state = "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode 2>/dev/null"
 cmd_presentation_on = "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s true"
 cmd_presentation_off = "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s false"
-cmd_mute_sf6 = "mute_hide_app.sh sf6 mute shade"
-cmd_unmute_sf6 = "mute_hide_app.sh sf6 unmute unshade"
+cmd_mute_sf6 = f"mute_hide_app.sh {shlex.quote(APPNAME_SF6)} mute shade"
+cmd_unmute_sf6 = f"mute_hide_app.sh {shlex.quote(APPNAME_SF6)} unmute unshade"
 icon_file = "p.png"
 
 
