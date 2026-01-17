@@ -13,7 +13,9 @@ cmd_presentation_on = "xfconf-query -c xfce4-power-manager -p /xfce4-power-manag
 cmd_presentation_off = "xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s false"
 cmd_mute_sf6 = f"mute_hide_app.sh {shlex.quote(APPNAME_SF6)} mute shade"
 cmd_unmute_sf6 = f"mute_hide_app.sh {shlex.quote(APPNAME_SF6)} unmute unshade"
-icon_file = "p.png"
+
+icon_file = Path(__file__).resolve().parent / "p.png"
+
 
 
 def get_state():
